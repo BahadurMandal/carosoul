@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <main>
+        <img src="https://picsum.photos/id/10/1000/500" alt="Images" class="slide">
+        <img src="https://picsum.photos/id/12/1000/500" alt="Images" class="slide">
+        <img src="https://picsum.photos/id/13/1000/500" alt="Images" class="slide">
+        <img src="https://picsum.photos/id/14/1000/500" alt="Images" class="slide">
+        <button class="btn-left" id="previous" onclick="slidePrev()"><i class="slide-icon fa-solid fa-chevron-right fa-2xl fa-rotate-180"></i></button>
+        <button class="btn-right" id="Next" onclick="slideNext()"><i class="slide-icon fa-solid fa-chevron-right fa-2xl"></i></button>
+    </main>
+    <div class="dots">
+        <span class="dot dot--specific"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
